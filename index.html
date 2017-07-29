@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>IP Location Information</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<h1 class="text-center">IP Address Location Finder</h1>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="ip">Enter an IP address here</label>
+					<input type="text" id="ip" value="41.78.64.2" placeholder="IP Address" class="form-control">			
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary btn-block" id="button">Go</button>					
+				</div>				
+			</div>
+			<div class="col-sm-8">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>ASN</td>
+							<td><div id="asn"></div></td>
+						</tr>
+						<tr>
+							<td>City</td>
+							<td><div id="city"></div></td>
+						</tr>
+						<tr>
+							<td>Country</td>
+							<td><div id="country"></div></td>
+						</tr>
+						<tr>
+							<td>Country Name</td>
+							<td><div id="country-name"></div></td>
+						</tr>
+						<tr>
+							<td>IP</td>
+							<td><div id="ip-address"></div></td>
+						</tr>
+						<tr>
+							<td>Latitude</td>
+							<td><div id="latitude"></div></td>
+						</tr>
+						<tr>
+							<td>Longitude</td>
+							<td><div id="longitude"></div></td>
+						</tr>
+						<tr>
+							<td>Organization</td>
+							<td><div id="org"></div></td>
+						</tr>
+						<tr>
+							<td>Postal</td>
+							<td><div id="postal"></div></td>
+						</tr>
+						<tr>
+							<td>Region</td>
+							<td><div id="region"></div></td>
+						</tr>
+						<tr>
+							<td>Region Code</td>
+							<td><div id="region-code"></div></td>
+						</tr>
+						<tr>
+							<td>Timezone</td>
+							<td><div id="timezone"></div></td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+		</div>		
+	</div>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: sans-serif;
+	padding-top: 40px;
+	background: #001b2b;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
